@@ -35,7 +35,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 │   │   └── page.tsx       # Home page with translations
 │   ├── layout.tsx         # Root layout
 │   └── page.tsx           # Redirect to default locale
-├── locales/               # Translation files
+├── mes/               # Translation files
 │   ├── en.json           # English translations
 │   └── tr.json           # Turkish translations
 ├── i18n.ts               # Internationalization configuration
@@ -56,13 +56,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Adding New Languages
 
-1. Add the new locale to the `locales` array in `i18n.ts`
-2. Create a new translation file in `locales/[locale].json`
+1. Add the new locale to the `messages` array in `i18n.ts`
+2. Create a new translation file in `messages/[locale].json`
 3. Update the middleware matcher if needed
 
 ## Adding New Translations
 
-1. Add new keys to all language files in the `locales/` directory
+1. Add new keys to all language files in the `messages/` directory
 2. Use the `useTranslations()` hook in your components
 3. Access translations with `t('key.subkey')`
 

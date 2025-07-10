@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin({
   experimental: {
-    createMessagesDeclaration: './locales/en.json'
+    createMessagesDeclaration: './messages/en.json'
   }
 });
 
